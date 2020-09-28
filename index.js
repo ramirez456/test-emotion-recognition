@@ -14,12 +14,14 @@ app.get('/evaluar/:texto', (req, res) => {
 
     res.json({
         input: req.params.texto,
-        output: result 
-    });    
+        output: result
+    });
 });
 
 app.use(express.static('public'));
 
-app.listen(3000, () => {
-    console.log('server on por 80');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log('server on por' + PORT);
 });
