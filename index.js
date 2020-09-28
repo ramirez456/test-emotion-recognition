@@ -21,5 +21,5 @@ app.get('/evaluar/:texto', (req, res) => {
 app.use(express.static('public'));
 
 app.listen(3000, () => {
-    console.log('server on por 3000');
+    console.log('server on por 80');
 });
