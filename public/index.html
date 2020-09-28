@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        .disabled {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-4">
+            <div class="col-12 text-center">
+                <button type="button" class="btn btn-success rounded-pill pr-4 pl-4" onclick="startListening();">
+                    <i class="fas fa-play mr-1"></i> Start
+                </button>
+                <button type="button" class="btn btn-danger rounded-pill pr-4 pl-4" onclick="stopListening();">
+                    <i class="fas fa-stop mr-1"></i> Stop
+                </button> 
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-12 text-center">
+                <p id="output">Esperando...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="./img/smile.png" class="disabled m-2" width="100px" height="100px" id="img-happy">
+                <img src="./img/sad.png" class="disabled m-2" width="100px" height="100px" id="img-sad">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
